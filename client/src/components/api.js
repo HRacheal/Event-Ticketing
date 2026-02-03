@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000', // backend URL
+  // This automatically uses the live Render URL if it exists, otherwise localhost
+  baseURL: 'https://event-ticketing-rnae.onrender.com', 
 });
 
 // Add token automatically
